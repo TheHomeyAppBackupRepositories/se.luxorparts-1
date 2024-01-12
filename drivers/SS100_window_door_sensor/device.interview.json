@@ -1,0 +1,40 @@
+
+"ids": {
+"modelId": "TS0203",
+"manufacturerName": "_TYZB01_yet4gkcj"
+},
+"endpoints": {
+"endpointDescriptors": [
+{
+"endpointId": 1,
+"applicationProfileId": 260,
+"applicationDeviceId": 1026,
+"applicationDeviceVersion": 0,
+"_reserved1": 1,
+"inputClusters": [
+0,
+        1,
+1280,
+],
+"outputClusters": [
+10,
+25
+]
+}
+],
+"endpoints": {
+"1": {
+"clusters": {
+"basic": {},
+"iasZone": {},
+"powerConfiguration": {}
+},
+"bindings": {
+"ota": {
+},
+"time": {
+}
+}
+}
+}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "se.luxorparts",
+  "version": "1.0.0",
+  "description": "Adds support for Cleverio and Luxorparts 433MHz and Z-Wave devices.\r This app works from Homey software version 1.5.13 and above.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "homey-rfdriver": "^3.2.5",
+    "homey-zwavedriver": "^2.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/ealv/se.luxorparts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ealv/se.luxorparts#readme"
+}

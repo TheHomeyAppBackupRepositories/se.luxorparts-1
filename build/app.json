@@ -1,0 +1,786 @@
+{
+  "id": "se.luxorparts",
+  "version": "1.2.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "brandColor": "#585E50",
+  "name": {
+    "en": "Cleverio"
+  },
+  "description": {
+    "en": "Life at home made easy"
+  },
+  "category": [
+    "lights",
+    "appliances"
+  ],
+  "permissions": [
+    "homey:wireless:433"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Kjell & Co"
+  },
+  "support": "https://www.kjell.com/no/kundeservice",
+  "drivers": [
+    {
+      "icon": "/drivers/50006/assets/icon.svg",
+      "images": {
+        "large": "/drivers/50006/assets/images/large.png",
+        "small": "/drivers/50006/assets/images/small.png"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff"
+      ],
+      "pair": [
+        {
+          "id": "rf.program",
+          "options": {
+            "svg": "assets/svg/pair.svg",
+            "title": "rf.pair.program.title.light",
+            "body": "rf.pair.program.body.light"
+          }
+        },
+        {
+          "id": "rf.test_switch",
+          "options": {
+            "body": "rf.pair.test.body.light_generated"
+          },
+          "navigation": {
+            "prev": "rf.program",
+            "next": "rf.done"
+          }
+        },
+        {
+          "id": "rf.done"
+        }
+      ],
+      "id": "50006",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "deprecated": true,
+      "name": {
+        "en": "Light"
+      },
+      "rf": {
+        "signal": "luxorparts"
+      }
+    },
+    {
+      "icon": "/drivers/50970R/assets/icon.svg",
+      "images": {
+        "large": "/drivers/50970R/assets/images/large.png",
+        "small": "/drivers/50970R/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "50970R",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "name": {
+        "en": "Large Remote"
+      },
+      "rf": {
+        "signal": "luxorparts"
+      },
+      "class": "other",
+      "capabilities": []
+    },
+    {
+      "icon": "/drivers/50970S/assets/icon.svg",
+      "images": {
+        "large": "/drivers/50970S/assets/images/large.png",
+        "small": "/drivers/50970S/assets/images/small.png"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Put the socket in pairing mode",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press and hold the program button on your socket for more then 3 seconds then release it.\nWhen the light on your socket blinks, click 'Program'.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the light stop blinking?",
+              "nl": "Stopte het lampje met knipperen?"
+            }
+          }
+        }
+      ],
+      "id": "50970S",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "name": {
+        "en": "Large Socket"
+      },
+      "rf": {
+        "signal": "luxorparts"
+      }
+    },
+    {
+      "icon": "/drivers/50973S/assets/icon.svg",
+      "images": {
+        "large": "/drivers/50973S/assets/images/large.png",
+        "small": "/drivers/50973S/assets/images/small.png"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Put the socket in pairing mode",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press and hold the program button on your socket for more then 3 seconds then release it.\nWhen the light on your socket blinks, click 'Program'.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the light stop blinking?",
+              "nl": "Stopte het lampje met knipperen?"
+            }
+          }
+        }
+      ],
+      "id": "50973S",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "name": {
+        "en": "Large Outdoor Socket"
+      },
+      "rf": {
+        "signal": "luxorparts"
+      }
+    },
+    {
+      "icon": "/drivers/50988S/assets/icon.svg",
+      "images": {
+        "large": "/drivers/50988S/assets/images/large.png",
+        "small": "/drivers/50988S/assets/images/small.png"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Put the socket in pairing mode",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": {
+              "en": "Press and hold the program button on your socket for more then 3 seconds then release it.\nWhen the light on your socket blinks, click 'Program'.",
+              "nl": "Druk een keer op de knop op het apparaat."
+            }
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": {
+              "en": "Did the light stop blinking?",
+              "nl": "Stopte het lampje met knipperen?"
+            }
+          }
+        }
+      ],
+      "id": "50988S",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "name": {
+        "en": " Small Socket"
+      },
+      "rf": {
+        "signal": "luxorparts"
+      }
+    },
+    {
+      "icon": "/drivers/50989R/assets/icon.svg",
+      "images": {
+        "large": "/drivers/50989R/assets/images/large.png",
+        "small": "/drivers/50989R/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press any button",
+              "nl": "Druk op een willekeurige knop"
+            },
+            "instruction": {
+              "en": "Press any button on your device.",
+              "nl": "Druk op een willekeurige knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "50989R",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "name": {
+        "en": "Small Remote"
+      },
+      "rf": {
+        "signal": "luxorparts"
+      },
+      "class": "other",
+      "capabilities": []
+    },
+    {
+      "icon": "/drivers/50990S/assets/icon.svg",
+      "images": {
+        "large": "/drivers/50990S/assets/images/large.png",
+        "small": "/drivers/50990S/assets/images/small.png"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "pair": [
+        {
+          "id": "rf_receiver_learn",
+          "navigation": {
+            "next": "rf_receiver_add"
+          },
+          "options": {
+            "title": {
+              "en": "Put the socket in pairing mode",
+              "nl": "Druk op de knop..."
+            },
+            "instruction": "rf.pair.program.body.no_button"
+          }
+        },
+        {
+          "id": "rf_receiver_add",
+          "options": {
+            "instruction": "rf.pair.program.body.no_button_add"
+          }
+        }
+      ],
+      "id": "50990S",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "name": {
+        "en": "Outdoor Socket"
+      },
+      "rf": {
+        "signal": "luxorparts"
+      }
+    },
+    {
+      "id": "51110",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "name": {
+        "en": "On/Off Receiver"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32774,
+        "productId": [
+          4096
+        ],
+        "productDocumentation": "https://products.z-wavealliance.org/ProductManual/File?folder=&filename=MarketCertificationFiles/3262/51110_manual_EN_NO_SV20190425.pdf",
+        "pid": 1941,
+        "imageRemotePath": "https://products.z-wavealliance.org/ProductImages/Index?productName=ZC10-19046437",
+        "learnmode": {
+          "image": "/drivers/51110/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the switch button three times within 1.5 seconds. The led flashes green.",
+            "de": "Drücke die Schalter-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
+            }
+          }
+        }
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power"
+      ],
+      "images": {
+        "large": "/drivers/51110/assets/images/large.png",
+        "small": "/drivers/51110/assets/images/small.png"
+      }
+    },
+    {
+      "id": "51111",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "name": {
+        "en": "Motion Sensor",
+        "de": "Bewegungsmelder"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32769,
+        "productId": [
+          4096
+        ],
+        "learnmode": {
+          "image": "/drivers/51111/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+            "de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": ":Lifeline association group (report to other devices): Include command classes: Battery report, Notification report, and Device Reset Locally notification, Binary report.",
+              "de": ":Lifeline Assoziations Gruppe (Bericht an andere Geräte): Bindet die Befehlsklassen ein: Battery report, Notification report, Device Reset Locally notification, Binary report."
+            }
+          },
+          "3": {
+            "hint": {
+              "en": ":Binary Sensor Command Class:Compatible with 300 series.",
+              "de": ":Binary Sensor Command Class:Kompatibel mit der 300er Serie."
+            }
+          }
+        }
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_motion",
+        "alarm_tamper"
+      ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
+      "images": {
+        "large": "/drivers/51111/assets/images/large.png",
+        "small": "/drivers/51111/assets/images/small.png"
+      }
+    },
+    {
+      "id": "51112",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "name": {
+        "en": "Thermometer",
+        "de": "Thermometer"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 32775,
+        "productId": [
+          4096
+        ],
+        "learnmode": {
+          "image": "/drivers/51112/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+            "de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_humidity",
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2450"
+        ]
+      },
+      "images": {
+        "large": "/drivers/51112/assets/images/large.png",
+        "small": "/drivers/51112/assets/images/small.png"
+      }
+    },
+    {
+      "id": "51113",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "name": {
+        "en": "Door/Window Sensor"
+      },
+      "zwave": {
+        "manufacturerId": 608,
+        "productTypeId": 360,
+        "productId": [
+          360
+        ],
+        "learnmode": {
+          "image": "/drivers/51113/assets/learnmode.svg",
+          "instruction": {
+            "en": "Triple-click the tab above the batteries on the back of the main unit within 1.5 seconds.\nThe green LED should start blinking."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline. All run-time reporting is addressed to this group. Only one node can be assigned to this association group. \nDefault: 1 (Homey's ID)",
+              "de": "Lifeline. Alle Laufzeitberichte sind an diese Gruppe gerichtet. Dieser Assoziationsgruppe kann nur ein Node zugeordnet werden. \nStandard: 1 (Homey's ID)"
+            }
+          }
+        }
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_tamper",
+        "alarm_contact"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA"
+        ]
+      },
+      "images": {
+        "large": "/drivers/51113/assets/images/large.png",
+        "small": "/drivers/51113/assets/images/small.png"
+      }
+    },
+    {
+      "id": "51114",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "name": {
+        "en": "Smoke Sensor",
+        "nl": "Rookmelder",
+        "de": "Rauchmelder"
+      },
+      "zwave": {
+        "manufacturerId": [
+          608,
+          1027
+        ],
+        "productTypeId": [
+          32766,
+          32770,
+          2
+        ],
+        "productId": [
+          4096,
+          3
+        ],
+        "learnmode": {
+          "image": "/drivers/51114/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the reset button three times within 1.5 seconds. The led flashes green.",
+            "de": "Drücke die Reset-Taste innerhalb von 1,5 Sekunden dreimal. Die LED blinkt grün."
+          }
+        },
+        "associationGroups": [
+          1
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_smoke",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
+      "images": {
+        "large": "/drivers/51114/assets/images/large.png",
+        "small": "/drivers/51114/assets/images/small.png"
+      }
+    }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "50970R:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "titleFormatted": {
+          "en": "[[unit]] [[state]] is pressed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=50970R"
+          },
+          {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+              "en": "Button"
+            },
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Button A",
+                  "nl": "Knop A"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Button B",
+                  "nl": "Knop B"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Button C",
+                  "nl": "Knop C"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Button D",
+                  "nl": "Knop D"
+                }
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "dropdown",
+            "title": {
+              "en": "State"
+            },
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "50989R:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "titleFormatted": {
+          "en": "[[state]] is pressed"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=50989R"
+          },
+          {
+            "type": "dropdown",
+            "name": "state",
+            "title": {
+              "en": "Button"
+            },
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan"
+                }
+              },
+              {
+                "id": "0",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "signals": {
+    "433": {
+      "luxorparts": {
+        "sof": [
+          375,
+          2250
+        ],
+        "words": [
+          [
+            375,
+            1125
+          ],
+          [
+            1125,
+            375
+          ]
+        ],
+        "packing": true,
+        "sensitivity": 0.2,
+        "repetitions": 7,
+        "minimalLength": 24,
+        "maximalLength": 24
+      }
+    }
+  }
+}
