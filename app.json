@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "se.luxorparts",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "platforms": [
@@ -171,6 +171,9 @@
       "name": {
         "en": "Large Socket (433)"
       },
+      "rf433": {
+        "satelliteMode": true
+      },
       "rf": {
         "signal": "luxorparts"
       }
@@ -223,6 +226,9 @@
       "name": {
         "en": "Large Outdoor Socket (433)"
       },
+      "rf433": {
+        "satelliteMode": true
+      },
       "rf": {
         "signal": "luxorparts"
       }
@@ -274,6 +280,9 @@
       ],
       "name": {
         "en": " Small Socket (433)"
+      },
+      "rf433": {
+        "satelliteMode": true
       },
       "rf": {
         "signal": "luxorparts"
@@ -363,6 +372,9 @@
       ],
       "name": {
         "en": "Outdoor Socket (433)"
+      },
+      "rf433": {
+        "satelliteMode": true
       },
       "rf": {
         "signal": "luxorparts"

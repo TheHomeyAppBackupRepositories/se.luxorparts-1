@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "homey-rfdriver": "^3.2.5",
+    "homey-rfdriver": "^3.3.2",
     "homey-zigbeedriver": "^1.6.12",
     "homey-zwavedriver": "^2.1.8",
     "zigbee-clusters": "^1.7.1"
